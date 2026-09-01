@@ -3,11 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mattywauna</title>
+
+    <title>Mattywauna | Official Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #000;
+            color: #e5d7bd;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            padding: 30px 20px;
+        }
+
+        .logo {
+            width: 90%;
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 0 auto 35px;
+        }
+
+        .headline {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 6px;
+            margin-bottom: 14px;
+        }
+
+        .subheadline {
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            opacity: 0.75;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                width: 100%;
+                max-width: 500px;
+            }
+
+            .headline {
+                font-size: 16px;
+                letter-spacing: 4px;
+            }
+
+            .subheadline {
+                font-size: 10px;
+                letter-spacing: 3px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Mattywauna</h1>
-    <p>Official website coming soon.</p>
+
+    <div class="container">
+
+        <img
+            src="mattywauna-logo.png"
+            alt="Mattywauna"
+            class="logo"
+        >
+
+        <div class="headline">
+            CURRENTLY UP IN SMOKE
+        </div>
+
+        <div class="subheadline">
+            WE'LL BE BACK SOON
+        </div>
+
+    </div>
+
 </body>
 </html>
