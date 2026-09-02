@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MATTYWAUNA</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: #000;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f2e3b6;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .page {
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      display: block;
+      width: min(760px, 92vw);
+      height: auto;
+      margin: 0 auto 34px auto;
+    }
+
+    .headline {
+      margin: 0 0 12px 0;
+      font-size: clamp(28px, 4vw, 52px);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      line-height: 1.15;
+    }
+
+    .subheadline {
+      margin: 0;
+      font-size: clamp(15px, 2vw, 22px);
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 28px 16px;
+      }
+
+      .logo {
+        width: 96vw;
+        margin-bottom: 26px;
+      }
+
+      .headline {
+        letter-spacing: 0.05em;
+      }
+
+      .subheadline {
+        letter-spacing: 0.12em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <img
+      class="logo"
+      src="mattywauna-logo.png"
+      alt="Mattywauna"
+    />
+
+    <h1 class="headline">CURRENTLY UP IN SMOKE.</h1>
+    <p class="subheadline">OFFICIAL WEBSITE COMING SOON</p>
+  </main>
+</body>
+</html>
