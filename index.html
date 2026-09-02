@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mattywauna | Official Website</title>
+    <title>Mattywauna | Drop 001</title>
 
     <style>
         * {
@@ -13,82 +13,250 @@
             box-sizing: border-box;
         }
 
+        html,
         body {
-            min-height: 100vh;
             background: #000;
-            color: #e5d7bd;
-            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
             display: flex;
             justify-content: center;
-            align-items: center;
-            text-align: center;
         }
 
-        .container {
+        /*
+        ==========================================
+        MASTER HOMEPAGE BACKGROUND
+        ==========================================
+        */
+
+        .homepage {
+            position: relative;
+
             width: 100%;
-            padding: 30px 20px;
+            max-width: 1054px;
+
+            aspect-ratio: 1054 / 1493;
+
+            background-image:
+                url("mattywauna-homepage-background.png");
+
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 100% 100%;
         }
 
-        .logo {
-            width: 90%;
-            max-width: 700px;
-            height: auto;
-            display: block;
-            margin: 0 auto 35px;
+        /*
+        ==========================================
+        PRODUCT IMAGE SETTINGS
+        ==========================================
+        */
+
+        .product {
+            position: absolute;
+
+            width: 14%;
+            height: 14%;
+
+            object-fit: contain;
+
+            z-index: 10;
         }
 
-        .headline {
-            font-size: 20px;
-            font-weight: 400;
-            letter-spacing: 6px;
-            margin-bottom: 14px;
+        /*
+        ==========================================
+        SLOT 1
+        ==========================================
+        */
+
+        #product1 {
+            left: 9.2%;
+            top: 51%;
         }
 
-        .subheadline {
-            font-size: 12px;
-            font-weight: 300;
-            letter-spacing: 4px;
-            opacity: 0.75;
+        /*
+        ==========================================
+        SLOT 2
+        ==========================================
+        */
+
+        #product2 {
+            left: 25%;
+            top: 51%;
         }
 
-        @media (max-width: 600px) {
-            .logo {
-                width: 100%;
-                max-width: 500px;
-            }
+        /*
+        ==========================================
+        SLOT 3
+        ==========================================
+        */
 
-            .headline {
-                font-size: 16px;
-                letter-spacing: 4px;
-            }
-
-            .subheadline {
-                font-size: 10px;
-                letter-spacing: 3px;
-            }
+        #product3 {
+            left: 40.8%;
+            top: 51%;
         }
+
+        /*
+        ==========================================
+        SLOT 4
+        ==========================================
+        */
+
+        #product4 {
+            left: 56.6%;
+            top: 51%;
+        }
+
+        /*
+        ==========================================
+        SLOT 5
+        ==========================================
+        */
+
+        #product5 {
+            left: 72.4%;
+            top: 51%;
+        }
+
+        /*
+        ==========================================
+        PRODUCT NAME LABELS
+        ==========================================
+        */
+
+        .product-name {
+            position: absolute;
+
+            width: 14%;
+            height: 2.1%;
+
+            top: 64.1%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+
+            font-size: clamp(6px, 1vw, 13px);
+
+            color: #111;
+            background: #c9a16c;
+
+            text-align: center;
+
+            z-index: 20;
+        }
+
+        #name1 {
+            left: 9.2%;
+        }
+
+        #name2 {
+            left: 25%;
+        }
+
+        #name3 {
+            left: 40.8%;
+        }
+
+        #name4 {
+            left: 56.6%;
+        }
+
+        #name5 {
+            left: 72.4%;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+<div class="homepage">
 
-        <img
-            src="mattywauna-logo.png"
-            alt="Mattywauna"
-            class="logo"
-        >
+    <!-- PRODUCT 1 -->
+    <img
+        id="product1"
+        class="product"
+        src=""
+        alt=""
+        style="display:none;"
+    >
 
-        <div class="headline">
-            CURRENTLY UP IN SMOKE
-        </div>
-
-        <div class="subheadline">
-            WE'LL BE BACK SOON
-        </div>
-
+    <div
+        id="name1"
+        class="product-name"
+        style="display:none;">
     </div>
+
+
+    <!-- PRODUCT 2 -->
+    <img
+        id="product2"
+        class="product"
+        src=""
+        alt=""
+        style="display:none;"
+    >
+
+    <div
+        id="name2"
+        class="product-name"
+        style="display:none;">
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+    <img
+        id="product3"
+        class="product"
+        src=""
+        alt=""
+        style="display:none;"
+    >
+
+    <div
+        id="name3"
+        class="product-name"
+        style="display:none;">
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+    <img
+        id="product4"
+        class="product"
+        src=""
+        alt=""
+        style="display:none;"
+    >
+
+    <div
+        id="name4"
+        class="product-name"
+        style="display:none;">
+    </div>
+
+
+    <!-- PRODUCT 5 -->
+    <img
+        id="product5"
+        class="product"
+        src=""
+        alt=""
+        style="display:none;"
+    >
+
+    <div
+        id="name5"
+        class="product-name"
+        style="display:none;">
+    </div>
+
+</div>
 
 </body>
 </html>
