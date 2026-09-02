@@ -15,9 +15,9 @@
 
         html,
         body {
-            background: #000;
             width: 100%;
             min-height: 100%;
+            background: #000;
         }
 
         body {
@@ -25,125 +25,120 @@
             justify-content: center;
         }
 
-        /*
-        ==========================================
-        MASTER HOMEPAGE BACKGROUND
-        ==========================================
-        */
+        /* MASTER HOMEPAGE IMAGE */
 
         .homepage {
             position: relative;
-
             width: 100%;
             max-width: 1054px;
 
             aspect-ratio: 1054 / 1493;
 
-            background-image:
-                url("mattywauna-homepage-background.png");
-
+            background-image: url("mattywauna-homepage-background.png");
             background-repeat: no-repeat;
             background-position: top center;
             background-size: 100% 100%;
         }
 
-        /*
-        ==========================================
-        PRODUCT IMAGE SETTINGS
-        ==========================================
-        */
+
+        /* ========================= */
+        /* CLICKABLE NAVIGATION      */
+        /* ========================= */
+
+        .nav-hotspot {
+            position: absolute;
+            top: 1.5%;
+            height: 2.5%;
+            z-index: 100;
+            cursor: pointer;
+            background: transparent;
+        }
+
+        .home-link {
+            left: 42.7%;
+            width: 5.2%;
+        }
+
+        .music-link {
+            left: 50.8%;
+            width: 5.2%;
+        }
+
+        .goods-link {
+            left: 58.7%;
+            width: 5.7%;
+        }
+
+        .stories-link {
+            left: 66.6%;
+            width: 6.2%;
+        }
+
+        .contact-link {
+            left: 74.5%;
+            width: 7%;
+        }
+
+
+        /* ========================= */
+        /* PRODUCT IMAGE OVERLAYS    */
+        /* ========================= */
 
         .product {
             position: absolute;
 
+            top: 51%;
             width: 14%;
             height: 14%;
 
             object-fit: contain;
 
             z-index: 10;
-        }
 
-        /*
-        ==========================================
-        SLOT 1
-        ==========================================
-        */
+            display: none;
+        }
 
         #product1 {
             left: 9.2%;
-            top: 51%;
         }
-
-        /*
-        ==========================================
-        SLOT 2
-        ==========================================
-        */
 
         #product2 {
             left: 25%;
-            top: 51%;
         }
-
-        /*
-        ==========================================
-        SLOT 3
-        ==========================================
-        */
 
         #product3 {
             left: 40.8%;
-            top: 51%;
         }
-
-        /*
-        ==========================================
-        SLOT 4
-        ==========================================
-        */
 
         #product4 {
             left: 56.6%;
-            top: 51%;
         }
-
-        /*
-        ==========================================
-        SLOT 5
-        ==========================================
-        */
 
         #product5 {
             left: 72.4%;
-            top: 51%;
         }
 
-        /*
-        ==========================================
-        PRODUCT NAME LABELS
-        ==========================================
-        */
+
+        /* PRODUCT LABELS */
 
         .product-name {
             position: absolute;
 
+            top: 64.1%;
+
             width: 14%;
             height: 2.1%;
 
-            top: 64.1%;
-
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
 
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
-
-            font-size: clamp(6px, 1vw, 13px);
-
-            color: #111;
             background: #c9a16c;
+            color: #111;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: clamp(6px, 1vw, 13px);
+            font-weight: 700;
 
             text-align: center;
 
@@ -169,7 +164,6 @@
         #name5 {
             left: 72.4%;
         }
-
     </style>
 </head>
 
@@ -177,83 +171,111 @@
 
 <div class="homepage">
 
+    <!-- CLICKABLE NAVIGATION -->
+
+    <a
+        class="nav-hotspot home-link"
+        href="index.html"
+        aria-label="Home">
+    </a>
+
+    <a
+        class="nav-hotspot music-link"
+        href="music.html"
+        aria-label="Music">
+    </a>
+
+    <a
+        class="nav-hotspot goods-link"
+        href="goods.html"
+        aria-label="Goods">
+    </a>
+
+    <a
+        class="nav-hotspot stories-link"
+        href="stories.html"
+        aria-label="Stories">
+    </a>
+
+    <a
+        class="nav-hotspot contact-link"
+        href="contact.html"
+        aria-label="Contact">
+    </a>
+
+
     <!-- PRODUCT 1 -->
+
     <img
         id="product1"
         class="product"
         src=""
         alt=""
-        style="display:none;"
     >
 
     <div
         id="name1"
-        class="product-name"
-        style="display:none;">
+        class="product-name">
     </div>
 
 
     <!-- PRODUCT 2 -->
+
     <img
         id="product2"
         class="product"
         src=""
         alt=""
-        style="display:none;"
     >
 
     <div
         id="name2"
-        class="product-name"
-        style="display:none;">
+        class="product-name">
     </div>
 
 
     <!-- PRODUCT 3 -->
+
     <img
         id="product3"
         class="product"
         src=""
         alt=""
-        style="display:none;"
     >
 
     <div
         id="name3"
-        class="product-name"
-        style="display:none;">
+        class="product-name">
     </div>
 
 
     <!-- PRODUCT 4 -->
+
     <img
         id="product4"
         class="product"
         src=""
         alt=""
-        style="display:none;"
     >
 
     <div
         id="name4"
-        class="product-name"
-        style="display:none;">
+        class="product-name">
     </div>
 
 
     <!-- PRODUCT 5 -->
+
     <img
         id="product5"
         class="product"
         src=""
         alt=""
-        style="display:none;"
     >
 
     <div
         id="name5"
-        class="product-name"
-        style="display:none;">
+        class="product-name">
     </div>
 
 </div>
