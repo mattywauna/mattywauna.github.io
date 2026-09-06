@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>MATTYWAUNA</title>
-  <meta name="description" content="Official website of Mattywauna — original music, stories, creative experiments, visuals, and AI-assisted creations." />
+
+  <meta
+    name="description"
+    content="Official website of Mattywauna — original music, stories, creative experiments, visuals, and AI-assisted creations."
+  />
 
   <style>
     * {
@@ -59,11 +64,12 @@
     }
 
     .social-links {
-      margin-top: 30px;
+      margin-top: 32px;
       display: flex;
+      align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 12px 24px;
     }
 
     .social-links a {
@@ -73,10 +79,15 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
+      transition: opacity 0.2s ease;
     }
 
     .social-links a:hover {
-      text-decoration: underline;
+      opacity: 0.65;
+    }
+
+    .separator {
+      opacity: 0.45;
     }
 
     @media (max-width: 600px) {
@@ -98,7 +109,15 @@
       }
 
       .social-links {
-        gap: 14px;
+        gap: 12px 16px;
+      }
+
+      .social-links a {
+        font-size: 13px;
+      }
+
+      .separator {
+        display: none;
       }
     }
   </style>
@@ -106,6 +125,7 @@
 
 <body>
   <main class="page">
+
     <img
       class="logo"
       src="mattywauna-logo.png"
@@ -113,14 +133,53 @@
     />
 
     <h1 class="headline">CURRENTLY UP IN SMOKE.</h1>
-    <p class="subheadline">OFFICIAL WEBSITE COMING SOON</p>
 
-    <div class="social-links">
-      <a href="https://www.instagram.com/mattywauna/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
-      <a href="https://www.tiktok.com/@mattywauna" target="_blank" rel="noopener noreferrer">TikTok</a>
-      <a href="https://www.youtube.com/@mattywauna" target="_blank" rel="noopener noreferrer">YouTube</a>
-    </div>
+    <p class="subheadline">
+      OFFICIAL WEBSITE COMING SOON
+    </p>
+
+    <nav class="social-links" aria-label="Social media">
+
+      <a
+        href="https://www.instagram.com/mattywauna/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      <span class="separator">•</span>
+
+      <a
+        href="https://www.tiktok.com/@mattywauna"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok
+      </a>
+
+      <span class="separator">•</span>
+
+      <a
+        href="https://www.youtube.com/@mattywauna"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube
+      </a>
+
+      <span class="separator">•</span>
+
+      <a
+        href="https://www.facebook.com/profile.php?id=61594228887124"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
+      </a>
+
+    </nav>
+
   </main>
 </body>
 </html>
