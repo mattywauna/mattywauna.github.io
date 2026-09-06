@@ -68,26 +68,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px 24px;
+      gap: 24px;
     }
 
     .social-links a {
       color: #f2e3b6;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      transition: opacity 0.2s ease;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
     .social-links a:hover {
+      transform: translateY(-3px);
       opacity: 0.65;
     }
 
-    .separator {
-      opacity: 0.45;
+    .social-links svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;
     }
 
     @media (max-width: 600px) {
@@ -109,15 +112,7 @@
       }
 
       .social-links {
-        gap: 12px 16px;
-      }
-
-      .social-links a {
-        font-size: 13px;
-      }
-
-      .separator {
-        display: none;
+        gap: 20px;
       }
     }
   </style>
@@ -138,44 +133,58 @@
       OFFICIAL WEBSITE COMING SOON
     </p>
 
-    <nav class="social-links" aria-label="Social media">
+    <nav class="social-links" aria-label="Mattywauna social media">
 
+      <!-- Instagram -->
       <a
         href="https://www.instagram.com/mattywauna/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Instagram"
+        title="Instagram"
       >
-        Instagram
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-3.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/>
+        </svg>
       </a>
 
-      <span class="separator">•</span>
-
-      <a
-        href="https://www.tiktok.com/@mattywauna"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        TikTok
-      </a>
-
-      <span class="separator">•</span>
-
-      <a
-        href="https://www.youtube.com/@mattywauna"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        YouTube
-      </a>
-
-      <span class="separator">•</span>
-
+      <!-- Facebook -->
       <a
         href="https://www.facebook.com/profile.php?id=61594228887124"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Facebook"
+        title="Facebook"
       >
-        Facebook
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.5 22v-9h3l.5-3h-3.5V8.1c0-.87.24-1.46 1.52-1.46H17V4a26.7 26.7 0 00-2.29-.12c-2.27 0-3.82 1.38-3.82 3.93V10H8v3h2.89v9h2.61z"/>
+        </svg>
+      </a>
+
+      <!-- TikTok -->
+      <a
+        href="https://www.tiktok.com/@mattywauna"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TikTok"
+        title="TikTok"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M16.6 5.82A4.48 4.48 0 0114.54 3h-3.32v13.18a2.8 2.8 0 11-2.8-2.8c.28 0 .55.04.81.12v-3.38a6.14 6.14 0 00-.81-.05A6.12 6.12 0 1014.54 16V9.31a7.8 7.8 0 004.56 1.46V7.45a4.49 4.49 0 01-2.5-1.63z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a
+        href="https://www.youtube.com/@mattywauna"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="YouTube"
+        title="YouTube"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/>
+        </svg>
       </a>
 
     </nav>
